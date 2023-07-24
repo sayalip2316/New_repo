@@ -30,7 +30,7 @@
         email:emailEl.value,
         password:passwordEl.value,
     }
-    fetch("http://localhost:4500/users/register",{
+    fetch("https://scary-cyan-sun-hat.cyclic.app/users/register",{
         method:"POST",
         headers:{
             "Content-type":"application/json"
@@ -40,7 +40,6 @@
     .then((res)=>{
         console.log(res)
         alert(res.msg)
-        window.location.href="login.html"
     })
    }
 </script>
